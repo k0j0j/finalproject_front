@@ -180,6 +180,70 @@
         .restaurant-detail {
             border-bottom: 1px solid rgb(194, 194, 194);
         }
+
+        /* 리뷰리스트 style */
+
+        .RestaurantReviewList{
+            /* border: 1px solid red; */
+        }
+
+        .RestaurantReviewList_Header{
+            /* border: 1px solid blue; */
+            display: flex;
+            width: 100%;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        .RestaurantReviewList_FilterList{
+            display: flex;
+            margin-left: auto;
+            font-size: 15px;
+        }
+
+        .RestaurantReviewList_FilterItem:after{
+            content: '|';
+            font-size: 22px;
+            margin: 0 7px;
+            color: #9b9b9b;
+        }
+
+        .RestaurantReviewList_FilterItem:last-child:after {
+            display: none;
+            content: '';
+        }
+
+        .RestaurantReviewList_FilterButton{
+            font-size: 18px;
+        }
+
+        /* 맛집 리뷰 body 부분 */
+
+        .RestaurantReviewList_ReviewItem{
+            box-sizing: border-box;
+            border: 1px solid red;
+            display: flex;
+            width:100%;
+            height: 500px;
+        }
+
+        .RestaurantReviewItem_User{
+            border: 1px solid red;
+            width:20%;
+            height:100%;
+        }
+
+        .RestaurantReviewItem_Content{
+            border: 1px solid red;
+            width:70%;
+            height:100%;
+        }
+        
+        .RestaurantReviewItem_RequestButton{
+            border: 1px solid red;
+            width:10%;
+            height:100%;
+        }
     </style>
 </head>
 
@@ -283,43 +347,6 @@
                                             <span class="Restaurant_Menu">순대국</span>
                                             <span class="Restaurant_MenuPrice">8,000원</span>
                                         </li>
-                                        <li class="Restaurant_MenuItem">
-                                            <span class="Restaurant_Menu">밥</span>
-                                            <span class="Restaurant_MenuPrice">1,000원</span>
-                                        </li>
-                                        <li class="Restaurant_MenuItem">
-                                            <span class="Restaurant_Menu">감자탕</span>
-                                            <span class="Restaurant_MenuPrice">30,000원</span>
-                                        </li>
-                                        <li class="Restaurant_MenuItem">
-                                            <span class="Restaurant_Menu">branch</span>
-                                            <span class="Restaurant_MenuPrice">10,000원</span>
-                                        </li>
-                                        <li class="Restaurant_MenuItem">
-                                            <span class="Restaurant_Menu">충돌</span>
-                                            <span class="Restaurant_MenuPrice">10,000원</span>
-                                        </li>
-                                        <li class="Restaurant_MenuItem">
-                                            <span class="Restaurant_Menu">충돌해결</span>
-                                            <span class="Restaurant_MenuPrice">10,000원</span>
-                                        </li>
-                                        <li class="Restaurant_MenuItem">
-                                            <span class="Restaurant_Menu">원격저장소</span>
-                                            <span class="Restaurant_MenuPrice">10,000원</span>
-                                        </li>
-                                        <li class="Restaurant_MenuItem">
-                                            <span class="Restaurant_Menu">인코딩 설정 추가</span>
-                                            <span class="Restaurant_MenuPrice">20,000원</span>
-                                        </li>
-                                        <li class="Restaurant_MenuItem">
-                                            <span class="Restaurant_Menu">push</span>
-                                            <span class="Restaurant_MenuPrice">20,000원</span>
-                                        </li>
-                                        <li class="Restaurant_MenuItem">
-                                            <span class="Restaurant_Menu">push1</span>
-                                            <span class="Restaurant_MenuPrice">20,000원</span>
-                                        </li>
-                                        
                                     </ul>
                                 </td>
                             </tr>
@@ -340,7 +367,40 @@
                 </div>
 
             </div>
-            <h2>와우2</h2>
+            <br>
+            <section class="RestaurantReviewList">
+                <header class="RestaurantReviewList_Header">
+                    <h2 class="RestaurantReviewList_Title">리뷰</h2>
+                    <ul class="RestaurantReviewList_FilterList">
+                        <li class="RestaurantReviewList_FilterItem">
+                            <button class="RestaurantReviewList_FilterButton">전체 (56)</button>
+                        </li>
+                        <li class="RestaurantReviewList_FilterItem">
+                            <button class="RestaurantReviewList_FilterButton">추천 (46)</button>
+                        </li>
+                        <li class="RestaurantReviewList_FilterItem">
+                            <button class="RestaurantReviewList_FilterButton">보통 (6)</button>
+                        </li>
+                        <li class="RestaurantReviewList_FilterItem">
+                            <button class="RestaurantReviewList_FilterButton">비추천 (4)</button>
+                        </li>
+                    </ul>
+                </header>
+                <ul class="RestaurantReviewList_ReviewList">
+                    <li class="RestaurantReviewItem RestaurantReviewList_ReviewItem">
+                        <div class="RestaurantReviewItem_User">
+                            
+                        </div>
+                        <div class="RestaurantReviewItem_Content">
+123
+                        </div>
+                        <div class="RestaurantReviewItem_RequestButton">
+
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            
         </div>
     </div>
 
